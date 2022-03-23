@@ -105,7 +105,7 @@ def world():
                 path.up()
                 path.goto(x + 10, y + 10)
                 path.dot(2, 'white')
-
+    
 
 def move():
     """Move pacman and all ghosts."""
@@ -134,6 +134,7 @@ def move():
         if valid(point + course):
             point.move(course)
         else:
+            
             options = [
                 vector(5, 0),
                 vector(-5, 0),
