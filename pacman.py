@@ -139,6 +139,7 @@ def move():
         if valid(point + course):
             point.move(course)
         else:
+            
             options = [
                 vector(20, 0),
                 vector(-20, 0),
